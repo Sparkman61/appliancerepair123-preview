@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — Appliance Repair 123 Charlotte NC</title>
+  <meta name="description" content="Frequently asked questions about Appliance Repair 123. Same-day service, diagnostic fees, warranty, service area, payment methods, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .faq-section { padding: 72px 24px; background: var(--white); }
+    .faq-list {
+      max-width: 760px;
+      margin: 0 auto 56px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 22px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      cursor: pointer;
+      text-align: left;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--navy);
+      transition: background 0.15s;
+    }
+    .faq-question:hover { background: var(--grey); }
+    .faq-question.open { background: var(--blue-light); color: var(--blue-dark); }
+    .faq-chevron {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      transition: transform 0.2s ease;
+      color: var(--muted);
+    }
+    .faq-question.open .faq-chevron { transform: rotate(180deg); color: var(--blue); }
+    .faq-answer {
+      display: none;
+      padding: 0 28px 22px;
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.7;
+      background: var(--blue-light);
+    }
+    .faq-answer.open { display: block; }
+
+    .faq-cta-card {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--navy);
+      border-radius: 10px;
+      padding: 40px 36px;
+      text-align: center;
+    }
+    .faq-cta-card h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+    .faq-cta-card p {
+      color: rgba(255,255,255,0.72);
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="concept-banner">
+    📋 This is a free concept redesign — Appliance Repair 123's actual site is at <a href="https://appliancerepair123.com" target="_blank" rel="noopener">appliancerepair123.com</a>
+  </div>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Appliance Repair <span>123</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="testimonials.html">Reviews</a></li>
+        <li><a href="brands.html">Brands</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tel:7043455314" class="nav-cta">Call Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="testimonials.html">Reviews</a></li>
+        <li><a href="brands.html">Brands</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tel:7043455314">📞 Call 704-345-5314</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <p class="eyebrow">FAQ</p>
+    <h1>Frequently Asked Questions</h1>
+    <p>Everything you need to know before booking. Still have questions? Call us anytime.</p>
+  </div>
+
+  <section class="faq-section">
+    <div class="section-inner">
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you offer same-day service?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 8 10 13 15 8"/></svg>
+          </button>
+          <div class="faq-answer">
+            Yes — same-day service is available across the Charlotte metro. Call before noon for the best chance at a same-day appointment. We do our best to accommodate urgent calls even in the afternoon.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What brands do you service?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 8 10 13 15 8"/></svg>
+          </button>
+          <div class="faq-answer">
+            We service all major brands including Samsung, LG, Whirlpool, GE, KitchenAid, Maytag, Kenmore, Bosch, and Frigidaire — plus high-end luxury brands like Viking, Thermador, and Sub-Zero. If you don't see your brand listed, just call and we'll let you know.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you charge a diagnostic fee?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 8 10 13 15 8"/></svg>
+          </button>
+          <div class="faq-answer">
+            Yes, a flat diagnostic fee applies to every service call. The good news: if you choose to proceed with the repair, that fee is credited toward the total cost of the repair.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What's included in the 90-day warranty?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 8 10 13 15 8"/></svg>
+          </button>
+          <div class="faq-answer">
+            Our 90-day warranty covers all parts and labor on every repair we perform. If the exact same issue returns within 90 days of your service date, we'll come back and fix it at no additional charge.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What areas do you serve?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 8 10 13 15 8"/></svg>
+          </button>
+          <div class="faq-answer">
+            We cover the full Charlotte metro including Charlotte, Concord, Cornelius, Fort Mill, Huntersville, Indian Trail, Waxhaw, Matthews, Mint Hill, Monroe, Kannapolis, Davidson, and Harrisburg. Not sure if we cover your area? Just call and ask.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you work on high-end appliances like Viking or Sub-Zero?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 8 10 13 15 8"/></svg>
+          </button>
+          <div class="faq-answer">
+            Yes. We're certified on luxury appliance brands and carry specialized parts for Viking, Thermador, Sub-Zero, and Wolf. High-end appliances need technicians who know them — we're not guessing when we open one up.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How do I prepare for my appointment?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 8 10 13 15 8"/></svg>
+          </button>
+          <div class="faq-answer">
+            A little prep goes a long way: clear the area around the appliance so the technician has room to work, locate the model number if you can (usually found inside the door or on the back panel), and make a note of when the problem started and any error codes you've seen.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What payment methods do you accept?
+            <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 8 10 13 15 8"/></svg>
+          </button>
+          <div class="faq-answer">
+            We accept all major credit cards, debit cards, and cash. Payment is due at the time of service.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="faq-cta-card">
+        <h3>Still have questions?</h3>
+        <p>Call us — we're happy to answer anything before you book.</p>
+        <a href="tel:7043455314" class="btn-white">Call 704-345-5314</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <div class="cta-strip">
+    <h2>Ready to Book?</h2>
+    <p>Call anytime — we're available 24/7 and offer same-day service across the Charlotte metro.</p>
+    <a href="tel:7043455314" class="phone-link">704-345-5314</a>
+    <a href="tel:7043455314" class="btn-white">Call Now — It's Free to Ask</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Appliance Repair <span>123</span></a>
+          <p>Same-day appliance repair across Charlotte and surrounding areas. Licensed, insured, and backed by a 90-day warranty on every repair.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="testimonials.html">Reviews</a></li>
+            <li><a href="brands.html">Brands</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h4>Contact</h4>
+          <p><a href="tel:7043455314">704-345-5314</a></p>
+          <p><a href="mailto:repairsameday123@gmail.com">repairsameday123@gmail.com</a></p>
+          <p style="margin-top:12px;">Available: 24/7<br>Same-Day Service</p>
+          <p style="margin-top:12px;">Charlotte, NC Metro</p>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="footer-bottom">
+        <span>© 2026 Appliance Repair 123. All rights reserved.</span>
+        <span><a href="tel:7043455314">704-345-5314</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const isOpen = btn.classList.contains('open');
+        document.querySelectorAll('.faq-question.open').forEach(b => {
+          b.classList.remove('open');
+          b.setAttribute('aria-expanded', 'false');
+          b.nextElementSibling.classList.remove('open');
+        });
+        if (!isOpen) {
+          btn.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          answer.classList.add('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brands We Service — Appliance Repair 123 Charlotte NC</title>
+  <meta name="description" content="Appliance Repair 123 services all major brands including Samsung, LG, Whirlpool, GE, KitchenAid, Maytag, Bosch, Frigidaire, Viking, Thermador, and Sub-Zero in Charlotte NC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .brands-section { padding: 72px 24px; background: var(--white); }
+    .brands-intro {
+      max-width: 680px;
+      margin: 0 auto 56px;
+      text-align: center;
+      font-size: 17px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+    .brands-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .brand-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 32px 20px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: box-shadow 0.15s, transform 0.15s;
+    }
+    .brand-card:hover { box-shadow: 0 4px 18px rgba(0,0,0,0.09); transform: translateY(-2px); }
+    .brand-logo-wrap {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .brand-logo {
+      max-height: 55px;
+      max-width: 140px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+    .brand-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--navy);
+      text-align: center;
+    }
+    .brands-note {
+      max-width: 680px;
+      margin: 48px auto 0;
+      text-align: center;
+      padding: 20px 28px;
+      background: var(--blue-light);
+      border-radius: 8px;
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .brands-note a {
+      color: var(--blue);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .brands-note a:hover { text-decoration: underline; }
+
+    @media (max-width: 900px) {
+      .brands-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .brands-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="concept-banner">
+    📋 This is a free concept redesign — Appliance Repair 123's actual site is at <a href="https://appliancerepair123.com" target="_blank" rel="noopener">appliancerepair123.com</a>
+  </div>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Appliance Repair <span>123</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="testimonials.html">Reviews</a></li>
+        <li><a href="brands.html" class="active">Brands</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tel:7043455314" class="nav-cta">Call Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="testimonials.html">Reviews</a></li>
+        <li><a href="brands.html" class="active">Brands</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tel:7043455314">📞 Call 704-345-5314</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <p class="eyebrow">What We Work On</p>
+    <h1>We Service All Major Brands</h1>
+    <p>Over a decade across the Charlotte metro means we've worked on every brand, every model, and nearly every failure mode.</p>
+  </div>
+
+  <section class="brands-section">
+    <div class="section-inner">
+      <div class="brands-intro">
+        Over a decade across the Charlotte metro means we've worked on every brand, every model, and nearly every failure mode.
+      </div>
+
+      <div class="brands-grid">
+
+        <div class="brand-card">
+          <div class="brand-logo-wrap">
+            <img src="images/brands/samsung.avif" alt="Samsung" class="brand-logo" style="width:130px;">
+          </div>
+          <span class="brand-name">Samsung</span>
+        </div>
+
+        <div class="brand-card">
+          <div class="brand-logo-wrap">
+            <img src="images/brands/Whirlpool.svg" alt="Whirlpool" class="brand-logo">
+          </div>
+          <span class="brand-name">Whirlpool</span>
+        </div>
+
+        <div class="brand-card">
+          <div class="brand-logo-wrap">
+            <img src="images/brands/lg.svg" alt="LG" class="brand-logo">
+          </div>
+          <span class="brand-name">LG</span>
+        </div>
+
+        <div class="brand-card">
+          <div class="brand-logo-wrap">
+            <img src="images/brands/ge.png" alt="GE" class="brand-logo">
+          </div>
+          <span class="brand-name">GE</span>
+        </div>
+
+        <div class="brand-card">
+          <div class="brand-logo-wrap">
+            <img src="images/brands/kitchenaid.svg" alt="KitchenAid" class="brand-logo">
+          </div>
+          <span class="brand-name">KitchenAid</span>
+        </div>
+
+        <div class="brand-card">
+          <div class="brand-logo-wrap">
+            <img src="images/brands/Maytag.avif" alt="Maytag" class="brand-logo">
+          </div>
+          <span class="brand-name">Maytag</span>
+        </div>
+
+        <div class="brand-card">
+          <div class="brand-logo-wrap">
+            <img src="images/brands/kenmore.png" alt="Kenmore" class="brand-logo">
+          </div>
+          <span class="brand-name">Kenmore</span>
+        </div>
+
+        <div class="brand-card">
+          <div class="brand-logo-wrap">
+            <img src="images/brands/frigidaire-elements-logos-color.svg" alt="Frigidaire" class="brand-logo">
+          </div>
+          <span class="brand-name">Frigidaire</span>
+        </div>
+
+        <div class="brand-card">
+          <div class="brand-logo-wrap">
+            <img src="images/brands/Electrolux-logo-blue-2022.png" alt="Electrolux" class="brand-logo" style="width:130px;">
+          </div>
+          <span class="brand-name">Electrolux</span>
+        </div>
+
+        <div class="brand-card">
+          <div class="brand-logo-wrap">
+            <img src="images/brands/bosch-com-wordmark.png" alt="Bosch" class="brand-logo">
+          </div>
+          <span class="brand-name">Bosch</span>
+        </div>
+
+      </div>
+
+      <div class="brands-note">
+        <strong>Don't see your brand?</strong> Call <a href="tel:7043455314">704-345-5314</a> — we also service Viking, Thermador, Sub-Zero, Amana, Speed Queen and more.
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <div class="cta-strip">
+    <h2>Ready to Book?</h2>
+    <p>Call anytime — we're available 24/7 and offer same-day service across the Charlotte metro.</p>
+    <a href="tel:7043455314" class="phone-link">704-345-5314</a>
+    <a href="tel:7043455314" class="btn-white">Call Now — It's Free to Ask</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Appliance Repair <span>123</span></a>
+          <p>Same-day appliance repair across Charlotte and surrounding areas. Licensed, insured, and backed by a 90-day warranty on every repair.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="testimonials.html">Reviews</a></li>
+            <li><a href="brands.html">Brands</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h4>Contact</h4>
+          <p><a href="tel:7043455314">704-345-5314</a></p>
+          <p><a href="mailto:repairsameday123@gmail.com">repairsameday123@gmail.com</a></p>
+          <p style="margin-top:12px;">Available: 24/7<br>Same-Day Service</p>
+          <p style="margin-top:12px;">Charlotte, NC Metro</p>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="footer-bottom">
+        <span>© 2026 Appliance Repair 123. All rights reserved.</span>
+        <span><a href="tel:7043455314">704-345-5314</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
