@@ -49,6 +49,13 @@
 
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image: url('images/Range-image.avif');"></div>
+      <div class="hero-slide" style="background-image: url('images/laundry.webp');"></div>
+      <div class="hero-slide" style="background-image: url('images/range-knobs.jpg');"></div>
+    </div>
+    <div class="hero-overlay"></div>
+
     <div class="hero-inner">
       <div class="hero-content">
         <p class="hero-eyebrow">Charlotte, NC · Same-Day Available</p>
@@ -64,6 +71,12 @@
         <a href="tel:7043455314" class="hero-phone">704-345-5314</a>
         <p class="hero-phone-sub">Tap to call anytime</p>
       </div>
+    </div>
+
+    <div class="hero-dots">
+      <button class="hero-dot active" data-index="0" aria-label="Slide 1"></button>
+      <button class="hero-dot" data-index="1" aria-label="Slide 2"></button>
+      <button class="hero-dot" data-index="2" aria-label="Slide 3"></button>
     </div>
   </section>
 
@@ -211,5 +224,32 @@
   </footer>
 
   <script src="main.js"></script>
+  <script>
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.hero-dot');
+    let current = 0;
+    let paused = false;
+
+    function goTo(n) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (n + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        goTo(parseInt(dot.dataset.index));
+        paused = true;
+        setTimeout(() => paused = false, 6000);
+      });
+    });
+
+    document.querySelector('.hero').addEventListener('mouseenter', () => paused = true);
+    document.querySelector('.hero').addEventListener('mouseleave', () => paused = false);
+
+    setInterval(() => { if (!paused) goTo(current + 1); }, 5000);
+  </script>
 </body>
 </html>
